@@ -3,7 +3,7 @@ import { ref, onMounted, computed } from 'vue'
 import axios from 'axios'
 import { useRoute } from 'vue-router'
 
-const API_URL = 'http://localhost:8080/api/items'
+const API_URL = `${import.meta.env.VITE_API_BASE_URL}/api/items`
 const route = useRoute()
 
 // --- States ---
